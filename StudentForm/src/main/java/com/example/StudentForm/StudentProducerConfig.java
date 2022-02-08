@@ -38,5 +38,18 @@ public class StudentProducerConfig {
 		return new KafkaTemplate<>(producerFactory);
 		
 	}
+	
+	
+	/*public void sendData(Student student) {
+		
+		KafkaTemplate<String, Student> kafkaTemplate
+		// TODO Auto-generated method stub
+		Map<String, Object> headers = new HashMap<>();
+		headers.put(KafkaHeaders.TOPIC, topicName);
+		kafkaTemplate.send(new GenericMessage<Student>(student, headers));
+		// use the below to send String values through kafka
+		// kafkaTemplate.send(topicName, "some string value")
+		LOGGER.info("Data - " + student.toString() + " sent to Kafka Topic - " + topicName);
+	}*/
 
 }

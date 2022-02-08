@@ -8,6 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Student {
 	
+	public Student() {
+		
+	}
+	
 	@Id
 	private String id;
 	
